@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+	<head> 
+  	<title> Exercicio 1 </title> 
+  	<meta charset="utf-8">
+	
+	<script language="JavaScript"> </script>
+	<script src="jquery-2.1.1.min.js"> </script>
+
+	<script>
+		function limpar() {
+			document.getElementById('nome').value="";
+			document.getElementById('data').value="";
+			document.getElementById('email').value="";
+		}
+	</script>
+
+	<script>
+		function verificar() {
+			alert("Dados gravados com sucesso! :)");
+		}
+	</script>
+	
+	<script>
+	jQuery (function($){
+		$("#data").mask("99/99/9999");
+	});
+	</script>
+
+	</head>
+
+	<h1> Formulário de Inscrição </h1> <hr> <br> <br>
+
+	<body>
+
+	<form id="form" name="form" method="post">
+	<span style="display:inline-table; width:190px;"> <b> Nome: </b> </span>
+    <input type="texto" id="nome" value=""/>
+	 <br/> 
+
+    <span style="display:inline-table; width:190px;"> <b> Data de Nascimento: </b> </span>
+    <input type="texto" id="data"/>		
+	<br/>
+
+    <span style="display:inline-table; width:190px;"> <b> Email: </b></span>
+    <input type="texto" id="email" value=""/>
+	<br/>    
+
+	<div class="botoes">
+		<br>
+		<input type="button" value="Limpar" onclick="limpar()"/>
+		<input type="button" value="Enviar" onclick="verificar()"/>
+	</div>
+
+	</body>
+</html>
