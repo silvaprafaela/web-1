@@ -7,9 +7,9 @@
 		<meta charset="utf-8">
 		<link type="text/css" href="layout.css" rel="stylesheet"/>
 		<link type="text/css" href="jquery-ui.css" rel="stylesheet"/>
-		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-		<script type="text/javascript" src="js/jquery-ui.js"></script>
-		<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="jquery-ui.js"></script>
+		<script type="text/javascript" src="script.js"></script>
 	</head>
 
 	<body>
@@ -64,11 +64,13 @@
 						<label for="Comentario" id=" textComentario"> Comentários:</label><br>
 						<textarea name="comentario" rows=8 cols=50 id="comentario"></textarea>
 						<p id="obrigatorio">*preenchimento obrigatório </p>
-						<input type="button" id="botao" name="enviar" value="Enviar"onclick=" dialogo()">
+						<input type="button" id="botao" name="enviar" value="Enviar"onclick="dialogo()">
 						<br><br>
 						</form>
 					</div>
-
+				</div>
+				<div id="dialog-confirm" title="Confirmar envio da mensagem?">
+					<p><span class="ui-icon ui-icon-alert" style="float:left; margin: 0 7px 20px 0;"></span>Você deseja realmente enviar o conteúdo dessa mensagem?</p>
 				</div>
 
 				<div class="menuPrincipal">
