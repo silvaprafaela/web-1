@@ -5,6 +5,22 @@ $(document).ready(function(e){
 		var href=$(this).attr('href');
 		$(".conteudo").load(href + " .conteudo");
 	});
+	$(".sobre").click(function(e){
+		e.preventDefault();
+		var href = $(this).attr('href');
+		$(".conteudo").load(href + " .conteudo");
+		$(".comentario").hide();
+		$(".menuPrincipal").hide();		
+	});
+	$(".links").click(function(e){
+		e.preventDefault();
+		var href = $(this).attr('href');
+		$(".conteudo").load(href + " .conteudo");
+		$(".comentario").hide();		
+		$(".menuPrincipal").hide();	
+	});
+	
+	
 });
 
 function dialogo(){
@@ -20,9 +36,9 @@ function dialogo(){
 				var validanome = false;
 				for(var i=0; i<=tamnome; i++){
 					if ( nome[i] == ' '){
-						var n = nome= document.querySelector("#nome").value.split(' ');
-						if ( n[0] >= 3){
-							if ( n[1] >= 4){
+						var n = document.querySelector("#nome").value.split(' ');
+						if ( (n[0].length) >= 3){
+							if ( (n[1].length) >= 4){
 								validanome = true;
 							}
 						}
@@ -33,9 +49,9 @@ function dialogo(){
 				var validaemail = false;
 				for(var j=0; j<=tamemail; j++){
 					if ( email[j] == '@'){
-						var e = email= document.querySelector("#email").value.split('@');
-						if ( e[0] >= 3){
-							if ( e[1] >= 4){
+						var e = document.querySelector("#email").value.split('@');
+						if ( (e[0].length) >= 3){
+							if ( (e[1].length) >= 4){
 								validaemail=true;
 							}
 						}
