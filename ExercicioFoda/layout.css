@@ -44,32 +44,33 @@ body{
  	border-radius: 10px;
     list-style: none;
  	display: inline-table;
- }
+}
 
- .menuTopo nav ul: after{
+.menuTopo nav ul:after{
  	content: "";
  	clear: both;
  	display: block;
- }
- .menuTopo nav ul li {
- 	float: left;
- }
+}
 
- .menuTopo nav ul li : hover {
+.menuTopo nav ul li {
+ 	float: left;
+}
+
+.menuTopo nav ul li:hover {
  	background: #4b545f;
  	background: linear-gradient( top, #4f5964 0%, #5f6975 40%);
  	background: -moz-linear-gradient( top, #4f5964 0%, #5f6975 40%);
  	background: -webkit-linear-gradient( top, #4f5964 0%, #5f6975 40%);
- }
+}
 
- .menuTopo nav ul li : hover a{
+ .menuTopo nav ul li:hover a{
  	color : #fff;
  }
 
  .menuTopo nav ul li a{
  	display: block;
  	padding: 25px 40px;
- 	color : #757575;
+ 	color: #757575;
  	text-decoration: none;
  }
 
