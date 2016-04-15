@@ -7,9 +7,9 @@
 		<meta charset="utf-8">
 		<link type="text/css" href="layout.css" rel="stylesheet"/>
 		<link type="text/css" href="jquery-ui.css" rel="stylesheet"/>
-		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-		<script type="text/javascript" src="js/jquery-ui.js"></script>
-		<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="jquery-ui.js"></script>
+		<script type="text/javascript" src="script.js"></script>
 	</head>
 
 	<body>
@@ -23,7 +23,7 @@
 				<div class="menuTopo">
 					<nav>
 						<ul>
-							<li><a href="inicio.html"> Home </a></li>
+							<li><a href="index.html"> Home </a></li>
 							<li><a href="links.html"> Links </a></li>
 							<li><a href="sobre.html"> Sobre </a></li>
 						</ul>
@@ -38,16 +38,64 @@
 						<p> Autor : Marcelo C. Mussel </p>
 					</div>
 
-			<div class="voltar">
-				<a href="inicio.html"> Voltar </a>
-			</div>	
+					<div class="conteudo">
+						<img src="home.jpg" alt="Fã Club Iron Maiden ">
+						<p id="pConteudo"> Página dedicada a compartilhar informações sobre a maior banda de Heavy Metal de todos os tempos . <br>
+											Iron Maiden are an institution. Over the course of nearly 40
+											years they have come to embody a spirit of fearless
+											creative independence , ferocious dedication to their fans ,
+											and a cheerful indifference to their critics that ? s won
+											them a following that spans every culture , generation , and
+											time - zone . A story of gritty determination and courageous
+											defiance of the naysayers , theirs has been an adventure
+											like no other , and with the rapturous receipt of their 16 th
+											studio album they ? re showing no signs of slowing down .
+						</p>
+					</div>
 
-			<div class="menuPrincipal">
-					<h3> Sobre </h3>
-				<p> Banda criada em alguma data por algumas pessoas legais. Tem anos de carreira e já fizeram
-                    várias músicas, shows, turnês, etc. </p>
+					<div class="comentario">
+						<h4> Envie seus comentários </h4>
+						<form name="formulario" class="formulario">
+						<br> <br>
+						<label for=" Nome">*Nome:</label>
+						<input type="text" id="nome" size="40"/><br><br>
+						<label for="Email" >*E-mail:</label>
+						<input type=" text" id="email" size="40"/><br><br >
+						<label for="Comentario" id=" textComentario"> Comentários:</label><br>
+						<textarea name="comentario" rows=8 cols=50 id="comentario"></textarea>
+						<p id="obrigatorio">*preenchimento obrigatório </p>
+						<input type="button" id="botao" name="enviar" value="Enviar"onclick="dialogo()">
+						<br><br>
+						</form>
+					</div>
+				</div>
+				<div id="dialog-confirm" title="Confirmar envio da mensagem?">
+					<p><span class="ui-icon ui-icon-alert" style="float:left; margin: 0 7px 20px 0;"></span>Você deseja realmente enviar o conteúdo dessa mensagem?</p>
+				</div>
 
-			</div>					
+				<div class="menuPrincipal">
+					<h3> Arquivo </h3>
+					<ul>
+						<li><a href="abril2016.html"> Abril / 2016 </a></li>
+						<li><a href="marco2016.html"> Março / 2016 </a></li>
+						<li><a href="fevereiro2016.html"> Fevereiro / 2016 </a></li>
+						<li><a href="janeiro2016.html"> Janeiro / 2016 </a></li>
+						<li><a href="#"> Dezembro / 2015 </a></li>
+						<li><a href="#"> Novembro / 2015 </a></li>
+						<li><a href="#"> Outubro / 2015 </a ></li>
+						<li><a href="#"> Setembro / 2015 </a></li>
+						<li><a href="#"> Agosto / 2015 </a></li>
+						<li><a href="#"> Julho / 2015 </a></li>
+						<li><a href="#"> Junho / 2015 </a></li>
+						<li><a href="#"> Maio / 2015 </a></li>
+						<li><a href="#"> Abril / 2015 </a></li>
+						<li><a href="#"> Março / 2015 </a></li>
+						<li><a href="#"> Fevereiro / 2015 </a></li>
+						<li><a href="#"> Janeiro / 2015 </a></li>
+					</ul>
+ 				 </div>
+
+			</div>
 
 			<div class="rodape">
 				<h5> Prof.Marcelo Corrêa Mussel &copy; Copyright 2016 - Todos os direitos reservados </h5>
